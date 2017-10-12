@@ -5,6 +5,8 @@
 
 include(regression) 
 
+include_directories("/users/srinath/allinea-forge-7.1-Suse-12-x86_64/map/wrapper")
+
 add_subdirectory( common )
 add_subdirectory( hydro )
 add_subdirectory( maire_hydro )
