@@ -24,6 +24,9 @@
 #include <sstream>
 #include <utility>
 
+// Arm Map api
+#include "mapsampler api.h"
+
 namespace apps {
 namespace hydro {
 
@@ -236,6 +239,9 @@ int driver(int argc, char** argv)
 
   // a counter for this session
   size_t num_steps = 0; 
+  
+  
+  allineastartsampling();
 
   for (
     size_t num_retries = 0;
@@ -431,6 +437,8 @@ int driver(int argc, char** argv)
     num_retries = 0;
 
   }
+
+  allineastopsampling();
 
 
   //===========================================================================
